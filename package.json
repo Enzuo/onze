@@ -1,0 +1,39 @@
+{
+  "name": "chatbot",
+  "version": "0.1.0",
+  "description": "Artificial personal assistant",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src test",
+    "pretest": "npm run lint",
+    "start": "node example/ding-dong-bot.js",
+    "test": "cross-env TAP_TIMEOUT=600 tap test/*-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzuo/chatbot"
+  },
+  "keywords": [
+    "chatbot"
+  ],
+  "author": "Enzuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enzuo/chatbot/issues"
+  },
+  "homepage": "https://github.com/enzuo/chatbot#readme",
+  "dependencies": {
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    }
+  },
+  "engines": {
+    "node": ">= 4.2.4"
+  },
+  "devDependencies": {
+  }
+}
